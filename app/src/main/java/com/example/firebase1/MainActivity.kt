@@ -1,6 +1,7 @@
 package com.example.firebase1
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.crashlytics.FirebaseCrashlytics
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Firebase.messaging.isAutoInitEnabled = true
+
+        Log.d("Hi", "onCreate: Hello Github")
     }
 
 
